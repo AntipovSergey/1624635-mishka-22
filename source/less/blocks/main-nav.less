@@ -1,0 +1,51 @@
+.main-nav {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  .font-bold;
+}
+
+.main-nav__list {
+  .reset-list;
+}
+
+.main-nav__item {
+  height: 79px;
+}
+
+.main-nav__link {
+  position: relative;
+  display: block;
+  padding: 29px 0 27px 76px;
+  border-top: 1px solid @very-light-gray;
+
+  &:hover .main-nav__text {
+    opacity: 0.6;
+  }
+
+  &:hover .main-nav__cart,
+  &:hover .main-nav__loop {
+    color: @moderate-cyan;
+    fill: @moderate-cyan;
+  }
+
+  &:focus .main-nav__text,
+  &:focus .main-nav__cart,
+  &:focus .main-nav__loop {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__list--second-part .main-nav__item:last-child .main-nav__link {
+  border-bottom: 1px solid @very-light-gray;
+}
+
+.main-nav__cart,
+.main-nav__loop {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  color: @light-gray;
+  fill: @light-gray;
+}
