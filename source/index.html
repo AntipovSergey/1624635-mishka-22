@@ -52,12 +52,45 @@
     <main class="page-main">
       <h1 class="visually-hidden">Интернет-магазин ручных изделий для дома "Мишка"</h1>
       <section class="promo">
-        <h2 class="promo__title">Милые штуки ручной работы для дома</h2>
-        <a class="promo__button" href="#">Предметы интерьера</a>
-        <a class="promo__button" href="#">Детские игрушки</a>
+        <h2 class="promo__title">Милые штуки ручной<br> работы для дома</h2>
+        <a class="promo__button" href="#">
+          <span class="promo-text">Предметы интерьера</span>
+          <svg class="promo__interior" width="40" height="62" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#interior"></use>
+          </svg>
+        </a>
+        <a class="promo__button" href="#">
+          <span class="promo-text">Детские игрушки</span>
+          <svg class="promo__toy" width="60" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#toy"></use>
+          </svg>
+        </a>
       </section>
       <section class="product">
-
+        <div class="product__wrapper">
+          <div class="product__header">
+            <h2 class="product__title">Вязаные корзинки</h2>
+            <p class="product__subtitle">Товар недели</p>
+          </div>
+          <p class="product__text">Экологически чистая пряжа,<br> ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+          <dl class="product__list">
+            <dt class="product__term">Цвет:</dt>
+            <dd class="product__definition">«Тиффани»/серый</dd>
+          </dl>
+          <dl class="product__list">
+            <dt class="product__term">Диаметр:</dt>
+            <dd class="product__definition">25 см</dd>
+          </dl>
+          <dl class="product__list">
+            <dt class="product__term">Высота:</dt>
+            <dd class="product__definition">15 см</dd>
+          </dl>
+          <picture>
+            <img class="product__image" src="img/product-image.jpg" srcset="img/product-image@2x.jpg" width="260" height="315" alt="Вязанные корзинки">
+          </picture>
+          <p class="product__price">Цена: 990 руб.</p>
+          <button class="product__button button button--mobile" type="button"><span class="button__text">Заказать</span></button>
+        </div>
       </section>
       <section class="about-us">
 
